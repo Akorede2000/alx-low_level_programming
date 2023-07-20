@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isupper - Test for isUpper
+ * @c: c para
  * Return: 1 if upper  and 0 otherwise
 */
 int _isupper(int c)
