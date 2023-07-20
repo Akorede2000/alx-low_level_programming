@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * main - Prints string
  * Return: Always 0
 */
