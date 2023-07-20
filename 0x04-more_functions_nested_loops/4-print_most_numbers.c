@@ -2,7 +2,7 @@
 /**
  * print_most_numbers - print most numbers
  * Return: nothing
-*/
+ */
 void print_most_numbers(void)
 {
 	int i;
