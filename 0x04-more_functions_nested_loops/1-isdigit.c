@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isdigit - check for digit
+ * _isdigit - check digit
  * @c: para
- * Return: 1 or 0
-*/
+ * Return: 0 success
+ */
 
 int _isdigit(int c)
 {

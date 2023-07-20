@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _isupper - Test for isUpper
- * @c: c para
- * Return: 1 if upper  and 0 otherwise
-*/
+ * _isupper - check for upper
+ * @c: para
+ * Return: 0 success
+ */
+
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)

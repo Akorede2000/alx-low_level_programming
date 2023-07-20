@@ -1,12 +1,15 @@
 #include "main.h"
 /**
- * mul - multiplies paras
- * @a: para 1
- * @b: para 2
- * Return: int
-*/
+ * mul - multiplies two ints
+ * @a: first para
+ * @b: sec para
+ * Return: 0 success
+ */
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int result;
+
+	result = a * b;
+	return (result);
 }
