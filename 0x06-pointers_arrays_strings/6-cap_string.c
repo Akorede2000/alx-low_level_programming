@@ -22,7 +22,7 @@ char *cap_string(char *s)
 	{
 		for (i = 0; s[i] != '\0'; i++)
 		{
-			if (s[i - 1] == a[j])
+			if (s[i - 1] == a[j] || i == 0)
 			{
 				if (s[i] <= 'z' && s[i] >= 'a')
 				{
