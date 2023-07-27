@@ -18,6 +18,7 @@ char *leet(char *str)
 			if (str[j] == test[i] || str[j] == test2[i])
 			{
 				str[j] = values[i];
+				break;
 			}
 		}
 	}
