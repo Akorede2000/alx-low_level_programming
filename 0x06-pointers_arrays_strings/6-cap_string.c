@@ -1,26 +1,35 @@
 #include "main.h"
-/**
- * cap_string - capitalize string
- * @str: pointer
- * Return: pointer
- */
-char *cap_string(char *str)
-{
-	char sep[13] = {'\n', '\t', ' ', '.', ',', ';', ',', '!', '?', '(', ')', '{', '}'};
-	int i, j;
 
-	for (i = 0; sep[i]; i++)
+/**
+ * cap_string - cap
+ * @s: s
+ * Return: char
+ */
+
+char *cap_string(char *s)
+{
+	int i, diff, j, len;
+	char a[] = " \t\n,;.!?\"(){}";
+
+	diff = 'a' - 'A';
+	len = 0;
+	while (a[len] != '\0')
 	{
-		for (j = 0; str[j]; j++)
+		len++;
+	}
+
+	for (j = 0; j < len; j++)
+	{
+		for (i = 0; s[i] != '\0'; i++)
 		{
-			if (str[j] == sep[i])
+			if (s[i - 1] == a[j])
 			{
-				if (str[j + 1] >= 'a' && str[j + 1] <= 'z')
+				if (s[i] <= 'z' && s[i] >= 'a')
 				{
-					str[j + 1] = str[j + 1] - 32;
+					s[i] = s[i] - diff;
 				}
 			}
-		} 
+		}
 	}
-	return (str);
+	return (s);
 }
