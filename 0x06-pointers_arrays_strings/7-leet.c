@@ -11,14 +11,13 @@ char *leet(char *str)
 	char values[] = "43071";
 	int i, j;
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; values[i]; i++)
 	{
 		for (j = 0; str[j]; j++)
 		{
 			if (str[j] == test[i] || str[j] == test2[i])
 			{
 				str[j] = values[i];
-				break;
 			}
 		}
 	}
