@@ -3,6 +3,7 @@
  * reverse_array - reverse array
  * @a: pointer
  * @n: int
+ * Return: nothing
  */
 void reverse_array(int *a, int n)
 {
