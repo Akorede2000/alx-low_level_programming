@@ -7,6 +7,7 @@
 char *leet(char *str)
 {
 	char test[] = "AE0TL";
+	char test2[] = "aeotl";
 	char values[] = "43071";
 	int i, j;
 
@@ -14,7 +15,7 @@ char *leet(char *str)
 	{
 		for (j = 0; str[j]; j++)
 		{
-			if (str[j] == test[i] || str[j] == test[i] + 32)
+			if (str[j] == test[i] || str[j] == test2[i])
 			{
 				str[j] = values[i];
 			}
